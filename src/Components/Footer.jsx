@@ -10,7 +10,7 @@ function Footer() {
         <div className="flex justify-center space-x-6 mt-4">
           {/* Facebook */}
           <a
-            href="https://www.facebook.com/yourprofile"
+            href="https://www.facebook.https://www.facebook.com/abdirahman.abdullahi.58173?mibextid=LQQJ4d/yourprofile"
             target="_blank"
             rel="noopener noreferrer"
             className="text-3xl hover:text-blue-500"
@@ -20,7 +20,7 @@ function Footer() {
 
           {/* X (Twitter) */}
           <a
-            href="https://twitter.com/yourprofile"
+            href="https://x.com/abdirah42874571?s=21"
             target="_blank"
             rel="noopener noreferrer"
             className="text-3xl hover:text-blue-400"
@@ -30,7 +30,7 @@ function Footer() {
 
           {/* GitHub */}
           <a
-            href="https://github.com/yourprofile"
+            href="https://github.com/Armaanmk32"
             target="_blank"
             rel="noopener noreferrer"
             className="text-3xl hover:text-gray-400"

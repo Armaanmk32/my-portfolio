@@ -14,29 +14,28 @@ function Header() {
     return (
         <div>
             <div className="sm:flex bg-white sm:mx-20 py-4 my-3 px-5 items-center top-0 left-0 right-0 rounded-lg sm:rounded-full shadow-black shadow-2xl justify-between">
-                <h1 className="text-3xl font-serif font-bold">ARMAAN</h1>
+                <h1 className="text-2xl font-bold">ARMAN</h1>
 
-                {/* Ul-ka waxaan ku isticmaalay hidden iyo block si aad u qarisid mobile-ka */}
+                {/* Navigation menu */}
                 <ul className={`gap-10 ${visible ? "block" : "hidden"} sm:flex`}>
                     <li className="text-xl">Home</li>
-                    <li className="text-xl">Products</li>
-                    <li className="text-xl">About Us</li>
-                    <a href="https://wa.me/2520616739858" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-                        <li className="text-xl">Contact Me</li>
-                    </a>
+                    <li className="text-xl">About Me</li>
+                    <li className="text-xl">My Skills</li>
+                    <li className="text-xl">Services</li>
                 </ul>
 
                 <div className="gap-5 flex">
-                    {/* Button-ka 'Contact Me' waxaan ku isticmaalay block iyo none */}
-                    <button
-                        className={`bg-white border-2 border-[#000000] shadow-inner shadow-black text-black mr-2 rounded-md px-7 py-1 ${visible ? "block" : "hidden"
-                            }`}
+                    {/* Button Contact Me */}
+                    <a 
+                        href="/cv.pdf" // Halkaas geli url-ka saxda ah
+                        download // Kani wuxuu u oggolaanayaa in faylka la soo dejiyaa
+                        className="bg-white border-2 border-[#000000] shadow-inner shadow-black text-black rounded-md px-5 py-1 hidden sm:block"
                     >
-                        Contact Me
-                    </button>
+                        Download My-CV
+                    </a>
                 </div>
 
-                {/* Icons-ka (fa-bars iyo fa-circle-xmark) */}
+                {/* Icons for mobile */}
                 <div>
                     <i
                         onClick={handleClick}
