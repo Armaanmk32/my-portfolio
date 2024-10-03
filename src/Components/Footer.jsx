@@ -10,7 +10,7 @@ function Footer() {
         <div className="flex justify-center space-x-6 mt-4">
           {/* Facebook */}
           <a
-            href="https://www.facebook.https://www.facebook.com/abdirahman.abdullahi.58173?mibextid=LQQJ4d/yourprofile"
+            href="https://www.facebook.com/abdirahman.abdullahi.58173?mibextid=LQQJ4d"
             target="_blank"
             rel="noopener noreferrer"
             className="text-3xl hover:text-blue-500"
