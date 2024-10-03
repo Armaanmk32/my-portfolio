@@ -13,7 +13,7 @@ function Header() {
 
     return (
         <div>
-            <div className="sm:flex bg-white sm:mx-20 py-4 my-3 px-5 items-center top-0 left-0 right-0 rounded-lg sm:rounded-full shadow-black shadow-2xl justify-between">
+            <div className="sm:flex bg-white  relative sm:mx-20 py-4 my-3 px-5 items-center top-0 left-0 right-0 rounded-lg sm:rounded-full shadow-black shadow-2xl justify-between">
                 <h1 className="text-2xl font-bold">ARMAN</h1>
 
                 {/* Navigation menu */}
@@ -24,12 +24,21 @@ function Header() {
                     <li className="text-xl">Services</li>
                 </ul>
 
-                <div className="gap-5 flex">
-                    {/* Button Contact Me */}
+                <div className=" absolute top-5 right-20">
+                    {/* Button to Download CV - now shown on both mobile and desktop */}
                     <a 
                         href="/cv.pdf" // Halkaas geli url-ka saxda ah
                         download // Kani wuxuu u oggolaanayaa in faylka la soo dejiyaa
                         className="bg-white border-2 border-[#000000] shadow-inner shadow-black text-black rounded-md px-5 py-1 hidden sm:block"
+                    >
+                        Download My-CV
+                    </a>
+
+                    {/* Button to Download CV for mobile view */}
+                    <a 
+                        href="/cv.pdf" // Halkaas geli url-ka saxda ah
+                        download // Kani wuxuu u oggolaanayaa in faylka la soo dejiyaa
+                        className="bg-white border-2 border-[#000000] shadow-inner shadow-black text-black rounded-md px-5 py-1 sm:hidden"
                     >
                         Download My-CV
                     </a>
@@ -39,7 +48,7 @@ function Header() {
                 <div>
                     <i
                         onClick={handleClick}
-                        className={`text-4xl sm:hidden absolute top-7 right-4 fa-solid fa-bars ${visible ? "hidden" : "block"}`}
+                        className={`text-4xl sm:hidden absolute top-3 right-4 fa-solid fa-bars ${visible ? "hidden" : "block"}`}
                     ></i>
                     <i
                         onClick={handleClosek}

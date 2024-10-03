@@ -4,7 +4,7 @@ function About() {
   return (
     <div className="px-5 md:px-20">
       <h1 className="text-4xl text-center mt-5 font-bold">About Me</h1>
-      <div className="flex flex-col md:flex-row justify-center items-center mb-10 mt-10">
+      <div className="flex flex-col md:flex-row justify-around items-center mb-10 mt-10">
         <div className="mt-8">
           <img className="w-[320px] shadow-black shadow-2xl rounded-full h-[320px]" src={arman} alt="Abdirahman Abdalla Nasser" />
         </div>
