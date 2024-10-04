@@ -1,6 +1,9 @@
 import arman from "../Images/arman.png";
-
 function About() {
+  const handleContactClick = () => {
+    window.open("https://wa.me/2520617942032", "_blank");
+  };
+
   return (
     <div className="px-5 md:px-20">
       <h1 className="text-4xl text-center mt-5 font-bold">About Me</h1>
@@ -18,7 +21,12 @@ function About() {
             <br />
             My journey in the tech world has been driven by a desire to constantly learn new skills and improve my craft, ensuring that I stay ahead of the ever-evolving trends in the industry. I thrive on problem-solving and enjoy working on challenging projects that push my limits.
           </p>
-          <button className="bg-black text-white py-2 mt-4 shadow-black shadow-2xl rounded-md px-5 hover:bg-gray-800 transition duration-200">Contact Me</button>
+          <button 
+            className="bg-black text-white py-2 mt-4 shadow-black shadow-2xl rounded-md px-5 hover:bg-gray-800 transition duration-200"
+            onClick={handleContactClick}
+          >
+            Contact Me
+          </button>
         </div>
       </div>
     </div>
