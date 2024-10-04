@@ -3,7 +3,7 @@ import { faWhatsapp, faFacebook, faTwitter, faGithub } from "@fortawesome/free-b
 
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-6 mt-10 relative">
+    <footer className="bg-black text-white py-6 mt-10 relative">
       <div className="container mx-auto text-center">
         <p className="mb-4">&copy; 2024 Abdirahman Abdalla Nasser. All Rights Reserved.</p>
         <p>Connect with me:</p>
