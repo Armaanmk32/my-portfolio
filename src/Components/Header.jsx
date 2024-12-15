@@ -15,7 +15,7 @@ function Header() {
     return (
         <div>
             <div className="sm:flex bg-white relative sm:mx-20 py-4 my-3 px-5 items-center top-0 left-0 right-0 rounded-lg sm:rounded-full shadow-black shadow-2xl justify-between">
-                <h1 className="text-2xl font-bold">ARMAN</h1>
+                <h1 className="text-2xl font-bold">Eng Armaan</h1>
 
                 {/* Navigation menu */}
                 <ul className={`gap-10 ${visible ? "block" : "hidden"} sm:flex`}>
