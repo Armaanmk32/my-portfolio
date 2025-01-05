@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp, faFacebook, faTwitter, faGithub } from "@fortawesome/free-brands-svg-icons"; // Import WhatsApp and other icons
+import { faFacebook, faTwitter, faGithub } from "@fortawesome/free-brands-svg-icons"; // Import WhatsApp and other icons
 
 function Footer() {
   return (
@@ -33,7 +33,7 @@ function Footer() {
             href="https://github.com/Armaanmk32"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-3xl hover:text-gray-400"
+            className="text-3xl hover:text-blue-400"
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
@@ -47,7 +47,7 @@ function Footer() {
         rel="noopener noreferrer"
         className="fixed bottom-4 right-4 text-green-600 text-5xl z-50"
       >
-        <FontAwesomeIcon icon={faWhatsapp} /> {/* Correct FontAwesome icon */}
+        <i class="fa-brands fa-square-whatsapp"></i> {/* Correct FontAwesome icon */}
       </a>
     </footer>
   );
