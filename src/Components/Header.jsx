@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { TbHexagonLetterA } from "react-icons/tb";
 
 function Header() {
     const [visible, setVisible] = useState(false);
@@ -15,7 +16,8 @@ function Header() {
     return (
         <div>
             <div className="sm:flex bg-white relative sm:mx-20 py-4 my-3 px-5 items-center top-0 left-0 right-0 rounded-lg sm:rounded-full shadow-black shadow-2xl justify-between">
-                <h1 className="text-2xl font-thin">Eng Arman</h1>
+                
+                <h1 className="text-2xl flex items-center   sm:font-normal"><TbHexagonLetterA className="mt-1"/>rman</h1>
 
                 {/* Navigation menu */}
                 <ul className={`gap-8 ${visible ? "block" : "hidden"} sm:flex`}>
@@ -41,9 +43,9 @@ function Header() {
                     <a 
                         href="/cv.pdf" // Halkaas geli url-ka saxda ah
                         download // Kani wuxuu u oggolaanayaa in faylka la soo dejiyaa
-                        className="bg-white border-2 border-[#000000] shadow-inner shadow-black text-black rounded-md  py-1 hidden sm:block sm:ml-10" // Wax yar ayaan ku daray margin-left (sm:ml-10) si loo kala fogeeyo
+                        className="bg-white border-2 border-[#000000] px-2 text-black rounded-md  py-1 hidden sm:block sm:ml-10" // Wax yar ayaan ku daray margin-left (sm:ml-10) si loo kala fogeeyo
                     >
-                        Download My-CV
+                        Download CV
                     </a>
 
                     {/* Button to Download CV for mobile view */}
@@ -52,19 +54,19 @@ function Header() {
                         download // Kani wuxuu u oggolaanayaa in faylka la soo dejiyaa
                         className="bg-white border-2 border-[#000000] shadow-inner shadow-black text-black rounded-md p-1 py-1 sm:hidden"
                     >
-                        Download My-CV
+                        Download CV
                     </a>
                 </div>
 
                 {/* Icons for mobile */}
-                <div>
+                <div className="items-center">
                     <i
                         onClick={handleClick}
-                        className={`text-4xl sm:hidden absolute top-3 right-4 fa-solid fa-bars ${visible ? "hidden" : "block"}`}
+                        className={`text-3xl sm:hidden absolute top-4 right-4 fa-solid fa-bars ${visible ? "hidden" : "block"}`}
                     ></i>
                     <i
                         onClick={handleClosek}
-                        className={`text-5xl sm:hidden absolute top-3 right-2 fa-solid fa-circle-xmark ${visible ? "block" : "hidden"}`}
+                        className={`text-4xl sm:hidden absolute top-3 right-2 fa-solid fa-circle-xmark ${visible ? "block" : "hidden"}`}
                     ></i>
                 </div>
             </div>
