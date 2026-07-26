@@ -1,9 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { TbHexagonLetterA } from "react-icons/tb";
 
 function Header() {
     const [visible, setVisible] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 20);
+        };
+
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        handleScroll();
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     const handleClick = () => {
         setVisible(true);
@@ -15,7 +27,7 @@ function Header() {
 
     return (
         <div>
-            <div className="sm:flex bg-white relative sm:mx-20 py-4 my-3 px-5 items-center top-0 left-0 right-0 rounded-lg sm:rounded-full shadow-black shadow-2xl justify-between">
+            <div className={`sm:flex relative sm:mx-20 py-4 my-3 px-5 items-center top-0 left-0 right-0 rounded-lg sm:rounded-full shadow-black shadow-2xl justify-between transition-all duration-300 ${scrolled ? "bg-white/90 backdrop-blur-md" : "bg-white"}`}>
                 
                 <h1 className="text-2xl flex items-center   sm:font-normal"><TbHexagonLetterA className="mt-1"/>rman</h1>
 

@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faTwitter, faGithub } from "@fortawesome/free-brands-svg-icons"; // Import WhatsApp and other icons
+import { faInstagram, faSnapchat } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
@@ -8,34 +8,24 @@ function Footer() {
         <p className="mb-4">&copy; 2024 Abdirahman Abdalla Nasser. All Rights Reserved.</p>
         <p>Connect with me:</p>
         <div className="flex justify-center space-x-6 mt-4">
-          {/* Facebook */}
+          {/* Snapchat */}
           <a
-            href="https://www.facebook.com/abdirahman.abdullahi.58173?mibextid=LQQJ4d"
+            href="https://snapchat.com/t/Lb8eRnkU"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-3xl hover:text-blue-500"
+            className="text-3xl hover:text-yellow-400"
           >
-            <FontAwesomeIcon icon={faFacebook} />
+            <FontAwesomeIcon icon={faSnapchat} />
           </a>
 
-          {/* X (Twitter) */}
+          {/* Instagram */}
           <a
-            href="https://x.com/abdirah42874571?s=21"
+            href="https://www.instagram.com/armaan__mk32?igsh=Z2o3MmJlM2ViMXIz&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-3xl hover:text-blue-400"
+            className="text-3xl hover:text-pink-500"
           >
-            <FontAwesomeIcon icon={faTwitter} />
-          </a>
-
-          {/* GitHub */}
-          <a
-            href="https://github.com/Armaanmk32"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-3xl hover:text-blue-400"
-          >
-            <FontAwesomeIcon icon={faGithub} />
+            <FontAwesomeIcon icon={faInstagram} />
           </a>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import arman from "../Images/arman.png";
+import arman from "../Images/armaan2.jpg";
 function About() {
   const handleContactClick = () => {
     window.open("https://wa.me/2520617942032", "_blank");
@@ -9,17 +9,19 @@ function About() {
       <h1 className="text-4xl text-center mt-5 font-bold">About Me</h1>
       <div className="flex flex-col md:flex-row justify-around items-center mb-10 mt-10">
         <div className="mt-8">
-          <img className="w-[320px] shadow-black shadow-2xl rounded-full h-[320px]" src={arman} alt="Abdirahman Abdalla Nasser" />
+          <img
+            className="h-[320px] w-[320px] rounded-full object-cover object-top shadow-2xl shadow-black"
+            src={arman}
+            alt="Abdirahman Abdalla Nasser"
+          />
         </div>
         <div className="w-full md:w-[500px] mt-6 md:mt-0 md:ml-10">
           <h2 className="font-semibold">Hi, I'm</h2>
           <h1 className="text-3xl mt-2 font-bold">Abdirahman Abdalla Nasser</h1>
-          <p className="mt-2">
-            I am a passionate full stack developer with a strong background in creating dynamic and interactive web applications. With expertise in both frontend and backend development, I specialize in using technologies like React.js, Node.js, MongoDB, and Express to build scalable and efficient solutions. 
+          <p className="mt-2 text-gray-700 leading-relaxed">
+            <strong>Professional Summary</strong>
             <br />
-            I am also a skilled graphic designer, video editor, and CCTV system expert, which gives me a unique ability to blend technical development with creative design.
-            <br />
-            My journey in the tech world has been driven by a desire to constantly learn new skills and improve my craft, ensuring that I stay ahead of the ever-evolving trends in the industry. I thrive on problem-solving and enjoy working on challenging projects that push my limits.
+            I am a passionate Content Creator with a background in Full Stack Development, Graphic Design, Video Editing, and CCTV System Expertise. I specialize in creating engaging digital content, combining creativity and technology to deliver high-quality visual experiences. With a strong interest in technology and digital trends, I continuously develop my skills to create valuable content and innovative solutions.
           </p>
           <button 
             className="bg-black text-white py-2 mt-4 shadow-black shadow-2xl rounded-md px-5 hover:bg-gray-800 transition duration-200"
