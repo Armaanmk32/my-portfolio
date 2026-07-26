@@ -50,24 +50,36 @@ function Header() {
                     </Link>
                 </ul>
 
-                <div className="absolute top-5 sm:top-4 right-20 sm:right-10"> {/* Waxaad bedeshay right-ka */}
-                    {/* Button to Download CV - now shown on both mobile and desktop */}
-                    <a 
-                        href="/cv.pdf" // Halkaas geli url-ka saxda ah
-                        download // Kani wuxuu u oggolaanayaa in faylka la soo dejiyaa
-                        className="bg-white border-2 border-[#000000] px-2 text-black rounded-md  py-1 hidden sm:block sm:ml-10" // Wax yar ayaan ku daray margin-left (sm:ml-10) si loo kala fogeeyo
+                <div className="absolute top-5 sm:top-4 right-20 sm:right-10">
+                    {/* Button to Download CV - Desktop */}
+                    <button 
+                        onClick={() => {
+                            const link = document.createElement('a');
+                            link.href = '/mycv.pdf';
+                            link.download = 'mycv.pdf';
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                        }}
+                        className="bg-white border-2 border-[#000000] px-2 text-black rounded-md py-1 hidden sm:block sm:ml-10"
                     >
                         Download CV
-                    </a>
+                    </button>
 
-                    {/* Button to Download CV for mobile view */}
-                    <a 
-                        href="/cv.pdf" // Halkaas geli url-ka saxda ah
-                        download // Kani wuxuu u oggolaanayaa in faylka la soo dejiyaa
+                    {/* Button to Download CV - Mobile */}
+                    <button 
+                        onClick={() => {
+                            const link = document.createElement('a');
+                            link.href = '/mycv.pdf';
+                            link.download = 'mycv.pdf';
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                        }}
                         className="bg-white border-2 border-[#000000] shadow-inner shadow-black text-black rounded-md p-1 py-1 sm:hidden"
                     >
                         Download CV
-                    </a>
+                    </button>
                 </div>
 
                 {/* Icons for mobile */}
